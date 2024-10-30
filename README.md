@@ -16,7 +16,7 @@ Consider the example of a mathematical assistant prompt:
 With sensitive content embedded in this prompt, the objective was to explore how we might securely transmit and execute this request without exposing the original prompt text to potential leaks.
 
 What I tried:
-I used a reversible encryption algorithm, such as AES (Advanced Encryption Standard), to encrypt this Prompt content. An encryption key and an initialization vector (IV) will be used to ensure successful decryption. In AES encryption, the IV typically acts as a random seed, whereas the term “salt” is usually reserved for hashing algorithms to enhance password strength. So, in this context, “IV” is more suitable.
+I used a reversible encryption algorithm, such as AES (Advanced Encryption Standard), to encrypt this Prompt content. An encryption key and an initialization vector (IV) will be used to ensure successful decryption. In AES encryption, the IV typically acts as a random seed.
 
 ### Encryption Steps:
 - **Algorithm**: AES-256-CBC (using a 256-bit key and CBC mode)
